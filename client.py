@@ -1,9 +1,7 @@
 import socket
 import random
 from threading import Thread
-import os
 
-os.system("color 0a")
 
 SERVER_HOST = "127.0.0.1"
 SERVER_PORT = 5002
@@ -19,7 +17,7 @@ print("[+]", name, "connected!")
 def listen_for_messages():
     while True:
         message = s.recv(1024).decode()
-        print("\n" + message)
+        print("\n"+"[User]", message)
 
 t = Thread(target=listen_for_messages)
 t.daemon = True

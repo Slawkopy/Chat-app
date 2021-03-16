@@ -1,8 +1,6 @@
 import socket
 from threading import Thread
-import os
 
-os.system("color 0a")
 
 SERVER_HOST = "0.0.0.0"
 SERVER_PORT = 5002
